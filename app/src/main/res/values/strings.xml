@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Intent Implicito</string>
+    <string name="IntentText">En esta Aplicacion, podras ingresar a mi perfil de github con tan solo dar click en un boton</string>
+</resources>
