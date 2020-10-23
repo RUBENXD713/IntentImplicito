@@ -1,5 +1,6 @@
 package com.example.intentimplicito;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
@@ -29,6 +30,13 @@ public class MainActivity extends AppCompatActivity {
         String textoIni = extras.getString("valor");
         text.setText(textoIni);
         solicitarPermisos();
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        if (requestCode== CodigoPermisos){
+            
+        }
     }
 
     private void solicitarPermisos() {
